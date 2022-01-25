@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <style>
+        .salom{
+        color:green;
+        }
+
+    </style>
+</head>
+
+<body>
+       <header>
+          <i> <h1><a href="{% url 'home' %}">Bosh sahifa</a></h1></i>
+       </header><br>
+       <h3>  <a href="{% url 'bosh' %}" style="color:red;">Tasnifi!</a> </h3>
+        <h3> <a href="{% url 'admin' %}" style="color:blue;">Admin Panelga</a> </h3><br>
+
+       <form action="https://google.com">
+           <label for="ism">Ismingiz</label>
+           <input type="text" id="ism" name="ism"><br><br>
+           <label for="familya">Familyangiz</label>
+           <input type="text" id="familya" name="familya"><br><br>
+           <label for="password">Parol</label>
+          <a> <input type="password" id="password" name="password"></a>
+           <label for="email">Emailingiz</label>
+           <a><input type="email" id="email" name="email"></a>
+           <label for="tanla">Talabamisiz?</label>
+          <input type="checkbox" id="tanla" name="tanle"><br><br>
+           <label for="b">Erkak</label>
+           <a><input type="radio" id="b" name="b"></a>
+           <label for="a">Ayol</label>
+           <input type="radio" id="a" name="b"> <br><br>
+           <button type="submit">Register</button>
+       </form>
+    <hr style="color:red;">
+
+
+       <p>
+
+{%  block content %}
+
+{%  endblock content%}
+       </p>
+
+
+
+<h4>
+   <i class="salom"> Bu yerdagi yangilikni to'liq ko'rmoqchi bo'lsangiz,mavzu ustiga bosing!</i>
+</h4>
+</body>
+
+
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html '%}
+
+
+
+
+{% block content %}
+           {% for post in object_list %}
+            <h2>
+                <a href="{% url 'qosh' post.pk%}">
+                    {{post.title}}
+                </a>
+            </h2>
+            <p>
+                <b>{{post.text}}</b>
+            </p>
+
+            {% endfor %}
+
+
+
+{% endblock content %}
